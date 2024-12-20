@@ -19,6 +19,7 @@ services:
             - "28983:8983"
         volumes:
             - solr_marketsquare_volume:/opt/solr/solr
+            - ./solr_config:/opt/solr/solr/server/solr/marketsquare/conf
 
 volumes:
     postgres_marketsquare_volume:
